@@ -9,7 +9,7 @@ st.set_page_config(page_title="Zaman Çizelgesi Analizörü", page_icon="🧠", 
 st.title("🧭 Zaman Çizelgesi Analizörü (AI Destekli)")
 st.write("Her gün yaptıklarını kaydet, haftalık sürecini analiz et ve Gemini'den kişisel tavsiye al!")
 
-# --- Sol sütun: Aktivite Girişi ---
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -25,7 +25,6 @@ with col1:
         else:
             st.warning("Lütfen bir aktivite gir.")
 
-# --- Sağ sütun: Veri Görüntüleme ---
 with col2:
     st.subheader("📊 Haftalık Aktivite Verileri")
     df = load_data()
